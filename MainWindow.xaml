@@ -1,0 +1,81 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CableStayedBridge"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" x:Class="CableStayedBridge.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="548" Width="640.327" MinHeight="600" MinWidth="400" >
+
+    <Grid>
+
+        <Ribbon x:Name="Ribbon_CSB" Grid.Row="0" Height="250.835" VerticalAlignment="Top"  Margin="0,-22,0,0" >
+            <!--Ribbon Quick Access Toolbar-->
+            <!--         <Ribbon.QuickAccessToolBar>
+                <RibbonQuickAccessToolBar>
+                    <RibbonButton SmallImageSource="Resources\Images\Save_30px.png" />
+                    <RibbonSplitButton SmallImageSource="Resources\Images\Undo_30px.png">
+                        <RibbonSplitMenuItem Header="Undo1" />
+                        <RibbonSplitMenuItem Header="Undo2" />
+                        <RibbonSplitMenuItem Header="Undo3" />
+                    </RibbonSplitButton>
+                    <RibbonSplitButton SmallImageSource="Resources\Images\Redo_30px.png">
+                        <RibbonSplitMenuItem Header="Redo1" />
+                        <RibbonSplitMenuItem Header="Redo2" />
+                        <RibbonSplitMenuItem Header="Redo3" />
+                    </RibbonSplitButton>
+                    <RibbonButton SmallImageSource="Resources\Images\Save_30px.png" />
+                </RibbonQuickAccessToolBar>
+            </Ribbon.QuickAccessToolBar>
+            -->
+
+            <!--Ribbon Help Pane Content-->
+            <Ribbon.HelpPaneContent>
+                <RibbonButton SmallImageSource="Resources\Images\Help_30px.png" />
+            </Ribbon.HelpPaneContent>
+
+            <!--Ribbon Application Menu-->
+            <Ribbon.ApplicationMenu>
+                <RibbonApplicationMenu KeyTip="F" Background="#FF255CB4">
+                    <RibbonApplicationMenuItem Header="保存" Width="150" ImageSource="Resources\Images\Save_30px.png"/>
+                    <RibbonApplicationMenuItem Header="选项" ImageSource="Resources\Images\Settings_30px.png" />
+                </RibbonApplicationMenu>
+            </Ribbon.ApplicationMenu>
+
+            <!--Ribbon Tab #1 Home-->
+            <RibbonTab x:Name="RibTab_CSB" Header="斜拉索" KeyTip="H" >
+                <RibbonGroup Header="建模助手">
+                    <RibbonMenuButton LargeImageSource="Resources\Images\Paste_30px.png" Label="Paste" KeyTip="V">
+                        <RibbonMenuItem Header="Keep Text Only" />
+                        <RibbonMenuItem Header="Keep Source Format" />
+                    </RibbonMenuButton>
+
+                    <RibbonButton x:Name="ribtn_Modeling" SmallImageSource="Resources\Images\Undo_30px.png" Label="建模" Click="ribtn_Modeling_Click" />
+                    <RibbonButton SmallImageSource="Resources\Images\Redo_30px.png" Label="Format" />
+                </RibbonGroup>
+
+                <RibbonGroup Header="优化系统">
+                    <RibbonButton LargeImageSource="Resources\Images\Delete_30px.png" Label="Delete" />
+                    <RibbonButton SmallImageSource="Resources\Images\Save_30px.png" Label="Save" />
+                    <RibbonButton SmallImageSource="Resources\Images\Print_30px.png" Label="Print" />
+                </RibbonGroup>
+                <RibbonGroup Header="图表输出" LargeImageSource="Resources\Images\Delete_30px.png">
+                    <RibbonMenuButton LargeImageSource="Resources\Images\Delete_30px.png" Label="Delete" />
+                    <RibbonMenuButton SmallImageSource="Resources\Images\Save_30px.png" Label="Save" />
+                    <RibbonMenuButton SmallImageSource="Resources\Images\Print_30px.png" Label="Print" />
+                </RibbonGroup>
+                <RibbonGroup Header="帮助">
+                    <RibbonMenuButton LargeImageSource="Resources\Images\Delete_30px.png" Label="帮助" />
+                    <RibbonMenuButton SmallImageSource="Resources\Images\Save_30px.png" Label="目录" />
+                    <RibbonMenuButton SmallImageSource="Resources\Images\Print_30px.png" Label="注册" />
+                    <RibbonMenuButton SmallImageSource="Resources\Images\Print_30px.png" Label="关于" />
+                </RibbonGroup>
+            </RibbonTab>
+        </Ribbon>
+
+        <Grid x:Name="Grid_MainWindowContent" Margin="1,116.835,1,1" Background="#FF6E6E6E">
+            <TextBlock x:Name="textBlock_Log" Margin="10" TextWrapping="Wrap" Text="TextBlock" Background="#FFD3FFE7"/>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,74 @@
+﻿<RibbonWindow x:Class="CableStayedBridge.Test.Window_Ribbon"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CableStayedBridge.Test"
+        mc:Ignorable="d"
+        Title="Window_Ribbon" Height="300" Width="460">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Ribbon x:Name="ribbonTest" Grid.Row="0" >
+            <!--Ribbon Quick Access Toolbar-->
+            <Ribbon.QuickAccessToolBar>
+                <RibbonQuickAccessToolBar>
+                    <RibbonButton SmallImageSource="..\Resources\Images\Save_30px.png" />
+                    <RibbonSplitButton SmallImageSource="..\Resources\Images\Undo_30px.png">
+                        <RibbonSplitMenuItem Header="Undo1" />
+                        <RibbonSplitMenuItem Header="Undo2" />
+                        <RibbonSplitMenuItem Header="Undo3" />
+                    </RibbonSplitButton>
+                    <RibbonSplitButton SmallImageSource="..\Resources\Images\Redo_30px.png">
+                        <RibbonSplitMenuItem Header="Redo1" />
+                        <RibbonSplitMenuItem Header="Redo2" />
+                        <RibbonSplitMenuItem Header="Redo3" />
+                    </RibbonSplitButton>
+                </RibbonQuickAccessToolBar>
+            </Ribbon.QuickAccessToolBar>
+
+            <!--Ribbon Help Pane Content-->
+            <Ribbon.HelpPaneContent>
+                <RibbonButton SmallImageSource="..\Resources\Images\Help_30px.png" />
+            </Ribbon.HelpPaneContent>
+
+            <!--Ribbon Application Menu-->
+            <Ribbon.ApplicationMenu>
+                <RibbonApplicationMenu KeyTip="F">
+                    <RibbonApplicationMenuItem Header="Save" Width="150" ImageSource="..\Resources\Images\Save_30px.png"/>
+                    <RibbonApplicationMenuItem Header="Options" ImageSource="..\Resources\Images\Settings_30px.png" />
+                </RibbonApplicationMenu>
+            </Ribbon.ApplicationMenu>
+
+            <!--Ribbon Tab #1 Home-->
+            <RibbonTab Header="Home" KeyTip="H">
+                <RibbonGroup Header="Home">
+                    <RibbonMenuButton LargeImageSource="..\Resources\Images\Paste_30px.png" Label="Paste" KeyTip="V">
+                        <RibbonMenuItem Header="Keep Text Only" />
+                        <RibbonMenuItem Header="Keep Source Format" />
+                    </RibbonMenuButton>
+
+                    <RibbonButton SmallImageSource="..\Resources\Images\Undo_30px.png" Label="Copy" />
+                    <RibbonButton SmallImageSource="..\Resources\Images\Redo_30px.png" Label="Format" />
+                </RibbonGroup>
+
+                <RibbonGroup Header="Operation">
+                    <RibbonMenuButton LargeImageSource="..\Resources\Images\Delete_30px.png" Label="Delete" />
+                    <RibbonMenuButton SmallImageSource="..\Resources\Images\Save_30px.png" Label="Save" />
+                    <RibbonMenuButton SmallImageSource="..\Resources\Images\Print_30px.png" Label="Print" />
+                </RibbonGroup>
+            </RibbonTab>
+
+            <RibbonTab Header="View" KeyTip="V">
+
+            </RibbonTab>
+
+            <RibbonTab Header="Help">
+
+            </RibbonTab>
+        </Ribbon>
+    </Grid>
+</RibbonWindow>

@@ -1,0 +1,48 @@
+﻿<Window x:Class="CableStayedBridge.Test.WindowMenuBar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CableStayedBridge.Test"
+        mc:Ignorable="d"
+        Title="WindowMenuBar" Height="300" Width="436">
+    <Grid ShowGridLines="True" Margin="0,0,3.6,0">
+        <!--停靠布局，让菜单栏和工具栏位于窗口顶部-->
+        <Menu DockPanel.Dock="Top" Height="26.589" VerticalAlignment="Top" Background="#FFEBBE78">
+            <MenuItem Header="File">
+                <!--菜单项为MenuItem，文字使用属性 Header-->
+                <MenuItem x:Name="menuOpen" Header="Open"/>
+                <MenuItem Header="Save"/>
+                <MenuItem Header="Delete"/>
+            </MenuItem>
+            <MenuItem Header="Edit"/>
+            <MenuItem Header="View"/>
+            <MenuItem Header="About"/>
+        </Menu>
+        <ToolBar DockPanel.Dock="Top" Header="" Height="31.255" VerticalAlignment="Top" Margin="0,26.589,0,0">
+            <ToolBar.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFE2E0DB" Offset="0"/>
+                    <GradientStop Color="#FFEAE8E4" Offset="0.791"/>
+                    <GradientStop Color="#FF2B2DD0" Offset="1"/>
+                </LinearGradientBrush>
+            </ToolBar.Background>
+            <!--ToolBar和StatusBar就是一个容器-->
+            <Button Content="Save"/>
+            <Button Content="SaveAll"/>
+            <Button Content="FileExplorer"/>
+            <Button Content="Start"/>
+            <Button Content="Test"/>
+        </ToolBar>
+        <TextBox x:Name="textBox" DockPanel.Dock="Top" Text="This is my space" Margin="0,57.844,0,22.3" Background="#FF6CD377"/>
+        <StatusBar DockPanel.Dock="Bottom" RenderTransformOrigin="0.5,0.5" Height="17.3" VerticalAlignment="Bottom">
+            <StatusBar.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFCFFFA" Offset="0"/>
+                    <GradientStop Color="#FF6180EB" Offset="1"/>
+                </LinearGradientBrush>
+            </StatusBar.Background>
+            <TextBlock Text="statusBar"/>
+        </StatusBar>
+    </Grid>
+</Window>
