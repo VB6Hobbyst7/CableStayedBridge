@@ -1,0 +1,59 @@
+﻿<后世博>
+  <DataBasePaths>
+    <WorkbooksInProject>E:\Expo-B03 Project\程序编写-DAMIE\基坑群实测数据动态分析\DAMIE\bin\Debug\DataBase\DataBase.xlsb</WorkbooksInProject>
+    <ConstructionProgress>
+      <FilePath>E:\Expo-B03 Project\程序编写-DAMIE\基坑群实测数据动态分析\DAMIE\bin\Debug\DataBase\DataBase.xlsb</FilePath>
+      <SheetName>施工进度_A1</SheetName>
+    </ConstructionProgress>
+    <ConstructionProgress>
+      <FilePath>E:\Expo-B03 Project\程序编写-DAMIE\基坑群实测数据动态分析\DAMIE\bin\Debug\DataBase\DataBase.xlsb</FilePath>
+      <SheetName>施工进度_B</SheetName>
+    </ConstructionProgress>
+    <ConstructionProgress>
+      <FilePath>E:\Expo-B03 Project\程序编写-DAMIE\基坑群实测数据动态分析\DAMIE\bin\Debug\DataBase\DataBase.xlsb</FilePath>
+      <SheetName>施工进度_C1</SheetName>
+    </ConstructionProgress>
+    <ConstructionProgress>
+      <FilePath>E:\Expo-B03 Project\程序编写-DAMIE\基坑群实测数据动态分析\DAMIE\bin\Debug\DataBase\DataBase.xlsb</FilePath>
+      <SheetName>施工进度_C2</SheetName>
+    </ConstructionProgress>
+    <ConstructionProgress>
+      <FilePath>E:\Expo-B03 Project\程序编写-DAMIE\基坑群实测数据动态分析\DAMIE\bin\Debug\DataBase\DataBase.xlsb</FilePath>
+      <SheetName>施工进度_D</SheetName>
+    </ConstructionProgress>
+    <SectionalView>
+      <FilePath>E:\Expo-B03 Project\程序编写-DAMIE\基坑群实测数据动态分析\DAMIE\bin\Debug\DataBase\DataBase.xlsb</FilePath>
+      <SheetName>剖面标高</SheetName>
+    </SectionalView>
+    <PointCoordinates>
+      <FilePath>E:\Expo-B03 Project\程序编写-DAMIE\基坑群实测数据动态分析\DAMIE\bin\Debug\DataBase\DataBase.xlsb</FilePath>
+      <SheetName>监测点坐标</SheetName>
+    </PointCoordinates>
+    <WorkingStage>
+      <FilePath>E:\Expo-B03 Project\程序编写-DAMIE\基坑群实测数据动态分析\DAMIE\bin\Debug\DataBase\DataBase.xlsb</FilePath>
+      <SheetName>开挖工况</SheetName>
+    </WorkingStage>
+    <PlanView>
+      <FilePath>E:\Expo-B03 Project\程序编写-DAMIE\基坑群实测数据动态分析\DAMIE\bin\Debug\DataBase\DataBase.xlsb</FilePath>
+      <SheetName>开挖分块</SheetName>
+    </PlanView>
+  </DataBasePaths>
+  <Visio平面图中的监测点绘制与定位>
+    <ShapeName_MonitorPointTag>Tag</ShapeName_MonitorPointTag>
+    <pt_CAD_BottomLeft_X>309598.5</pt_CAD_BottomLeft_X>
+    <pt_CAD_BottomLeft_Y>-119668.4</pt_CAD_BottomLeft_Y>
+    <pt_CAD_UpRight_X>536642.6</pt_CAD_UpRight_X>
+    <pt_CAD_UpRight_Y>201852.1</pt_CAD_UpRight_Y>
+    <pt_Visio_BottomLeft_ShapeID>197</pt_Visio_BottomLeft_ShapeID>
+    <pt_Visio_UpRight_ShapeID>217</pt_Visio_UpRight_ShapeID>
+  </Visio平面图中的监测点绘制与定位>
+  <Visio平面图中的监测点绘制与定位_后世博备份>
+    <ShapeName_MonitorPointTag>tag</ShapeName_MonitorPointTag>
+    <pt_CAD_BottomLeft_X>0</pt_CAD_BottomLeft_X>
+    <pt_CAD_BottomLeft_Y>0</pt_CAD_BottomLeft_Y>
+    <pt_CAD_UpRight_X>536642.6</pt_CAD_UpRight_X>
+    <pt_CAD_UpRight_Y>0</pt_CAD_UpRight_Y>
+    <pt_Visio_BottomLeft_ShapeID>0</pt_Visio_BottomLeft_ShapeID>
+    <pt_Visio_UpRight_ShapeID>217</pt_Visio_UpRight_ShapeID>
+  </Visio平面图中的监测点绘制与定位_后世博备份>
+</后世博>

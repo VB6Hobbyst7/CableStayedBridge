@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8118988E-B67E-4DD6-885A-2B4096D39F2B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>DAMIE.My.MyApplication</StartupObject>
+    <RootNamespace>DAMIE</RootNamespace>
+    <AssemblyName>DAMIE</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>DAMIE.xml</DocumentationFile>
+    <NOWARN>1591,660,661</NOWARN>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>DAMIE.xml</DocumentationFile>
+    <NOWARN>1591,660,661</NOWARN>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\图标.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="mscorlib" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="eZAPI">
+      <HintPath>F:\Software\Programming\Tests_Examples\GitHubProjects\eZstd\bin\eZAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Visio, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Office, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataFormation\frmDeriveDataFromExcel.Designer.cs">
+      <DependentUpon>frmDeriveDataFromExcel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFormation\frmDeriveDataFromExcel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataFormation\frmDeriveDataFromWord.Designer.cs">
+      <DependentUpon>frmDeriveDataFromWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFormation\frmDeriveDataFromWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataFormation\frmDeriveData_Word.Designer.cs">
+      <DependentUpon>frmDeriveData_Word.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFormation\frmDeriveData_Word.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataFormation\frmDeriveData_Excel.Designer.cs">
+      <DependentUpon>frmDeriveData_Excel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFormation\frmDeriveData_Excel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataFormation\frmDeriveData.Designer.cs">
+      <DependentUpon>frmDeriveData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFormation\frmDeriveData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog Box\frmRegexDate.Designer.cs">
+      <DependentUpon>frmRegexDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog Box\frmRegexDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drawings_Forms\Elevation\ClsDrawing_ExcavationDepth.cs" />
+    <Compile Include="Drawings_Forms\MonitorData\ClsDrawing_Mnt_MaxWithDepth.cs" />
+    <Compile Include="Drawings_Forms\MonitorData\clsDrawing_Mnt_RollingBase.cs" />
+    <Compile Include="Drawings_Forms\PlanView\frmDrawingPlan.Designer.cs">
+      <DependentUpon>frmDrawingPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drawings_Forms\PlanView\frmDrawingPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drawings_Forms\MonitorData\clsDrawing_Mnt_StaticBase.cs" />
+    <Compile Include="Drawings_Forms\NS_All_Drawings_In_Application.cs" />
+    <Compile Include="Drawings_Forms\MonitorData\ClsDrawing_Mnt_Base.cs" />
+    <Compile Include="Drawings_Forms\MonitorData\ClsDrawing_Mnt_OtherDynamics.cs" />
+    <Compile Include="Drawings_Forms\MonitorData\ClsDrawing_Mnt_Static.cs" />
+    <Compile Include="Drawings_Forms\MonitorData\Cls_Excel_MonitorDrawing.cs" />
+    <Compile Include="Drawings_Forms\Elevation\frmDrawElevation.Designer.cs">
+      <DependentUpon>frmDrawElevation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drawings_Forms\Elevation\frmDrawElevation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog Box\frmLockCurves.Designer.cs">
+      <DependentUpon>frmLockCurves.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog Box\frmLockCurves.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm_ProjectFile\GlobalApplication.cs" />
+    <Compile Include="ProjectFile\ClsData_DataBase.cs" />
+    <Compile Include="MainForm_ProjectFile\MainForm_Partial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog Box\DiaFrm_LockDelete.Designer.cs">
+      <DependentUpon>DiaFrm_LockDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog Box\DiaFrm_LockDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Output_Word.Designer.cs">
+      <DependentUpon>frm_Output_Word.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Output_Word.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Miscellaneous Types\M_Class_MySettings.cs" />
+    <Compile Include="Miscellaneous Types\M_Constants.cs" />
+    <Compile Include="Miscellaneous Types\M_miscellaneous.cs" />
+    <Compile Include="Drawings_Forms\MonitorData\ClsDrawing_Mnt_Incline.cs" />
+    <Compile Include="Drawings_Forms\PlanView\ClsDrawing_PlanView.cs" />
+    <Compile Include="Drawings_Forms\MonitorData\frmDrawing_Mnt_Others.Designer.cs">
+      <DependentUpon>frmDrawing_Mnt_Others.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drawings_Forms\MonitorData\frmDrawing_Mnt_Others.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drawings_Forms\MonitorData\frmDrawing_Mnt_Incline.Designer.cs">
+      <DependentUpon>frmDrawing_Mnt_Incline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drawings_Forms\MonitorData\frmDrawing_Mnt_Incline.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRolling.Designer.cs">
+      <DependentUpon>frmRolling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRolling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog Box\frmPointsTreeView.Designer.cs">
+      <DependentUpon>frmPointsTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog Box\frmPointsTreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm_ProjectFile\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm_ProjectFile\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectFile\clsProjectFile.cs" />
+    <Compile Include="ProjectFile\frmProjectFile.Designer.cs">
+      <DependentUpon>frmProjectFile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectFile\frmProjectFile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Application.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ProjectFile\NS_DataBase.cs" />
+    <Compile Include="User Controls\ListBox_NoReplyForKeyDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Z_Test\Test_FindMax.Designer.cs">
+      <DependentUpon>Test_FindMax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Test\Test_FindMax.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Z_Test\TemplateCodes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Z_Test\Test_FixWndSize.Designer.cs">
+      <DependentUpon>Test_FixWndSize.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Test\Test_FixWndSize.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User Controls\AddFileOrDirectoryFiles.Designer.cs">
+      <DependentUpon>AddFileOrDirectoryFiles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\AddFileOrDirectoryFiles.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\myDataGridView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="User Controls\PictureBox_AutoRoll.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="User Controls\UsrCtrl_NumberChanging.designer.cs">
+      <DependentUpon>UsrCtrl_NumberChanging.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UsrCtrl_NumberChanging.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Miscellaneous Types\UI_SplashScreen.Designer.cs">
+      <DependentUpon>UI_SplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscellaneous Types\UI_SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Miscellaneous Types\UI_BackGround.Designer.cs">
+      <DependentUpon>UI_BackGround.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Miscellaneous Types\UI_BackGround.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataFormation\Visio_DataRecordsetLinkToShape.Designer.cs">
+      <DependentUpon>Visio_DataRecordsetLinkToShape.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataFormation\Visio_DataRecordsetLinkToShape.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Z_Test\Test_regularExpression.cs" />
+    <Compile Include="Z_Test\Test_WindowProc.Designer.cs">
+      <DependentUpon>Test_WindowProc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Z_Test\Test_WindowProc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataFormation\frmDeriveDataFromExcel.resx">
+      <DependentUpon>frmDeriveDataFromExcel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataFormation\frmDeriveDataFromWord.resx">
+      <DependentUpon>frmDeriveDataFromWord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataFormation\frmDeriveData_Word.resx">
+      <DependentUpon>frmDeriveData_Word.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataFormation\frmDeriveData_Excel.resx">
+      <DependentUpon>frmDeriveData_Excel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataFormation\frmDeriveData.resx">
+      <DependentUpon>frmDeriveData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog Box\frmRegexDate.resx">
+      <DependentUpon>frmRegexDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drawings_Forms\PlanView\frmDrawingPlan.resx">
+      <DependentUpon>frmDrawingPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drawings_Forms\Elevation\frmDrawElevation.resx">
+      <DependentUpon>frmDrawElevation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog Box\frmLockCurves.resx">
+      <DependentUpon>frmLockCurves.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog Box\DiaFrm_LockDelete.resx">
+      <DependentUpon>DiaFrm_LockDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drawings_Forms\MonitorData\frmDrawing_Mnt_Others.resx">
+      <DependentUpon>frmDrawing_Mnt_Others.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drawings_Forms\MonitorData\frmDrawing_Mnt_Incline.resx">
+      <DependentUpon>frmDrawing_Mnt_Incline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRolling.resx">
+      <DependentUpon>frmRolling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog Box\frmPointsTreeView.resx">
+      <DependentUpon>frmPointsTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Output_Word.resx">
+      <DependentUpon>frm_Output_Word.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm_ProjectFile\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProjectFile\frmProjectFile.resx">
+      <DependentUpon>frmProjectFile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Z_Test\Test_FindMax.resx">
+      <DependentUpon>Test_FindMax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Z_Test\Test_Excel.resx">
+      <DependentUpon>Test_Excel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Z_Test\Test_FixWndSize.resx">
+      <DependentUpon>Test_FixWndSize.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\AddFileOrDirectoryFiles.resx">
+      <DependentUpon>AddFileOrDirectoryFiles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\myDataGridView.resx">
+      <DependentUpon>myDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\PictureBox_AutoRoll.resx">
+      <DependentUpon>PictureBox_AutoRoll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UsrCtrl_NumberChanging.resx">
+      <DependentUpon>UsrCtrl_NumberChanging.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscellaneous Types\UI_SplashScreen.resx">
+      <DependentUpon>UI_SplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Miscellaneous Types\UI_BackGround.resx">
+      <DependentUpon>UI_BackGround.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataFormation\Visio_DataRecordsetLinkToShape.resx">
+      <DependentUpon>Visio_DataRecordsetLinkToShape.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Class Diagram\主程序.cd" />
+    <None Include="Class Diagram\静态图表.cd" />
+    <None Include="Class Diagram\ClassDiagram1.cd" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Class Diagram\绘图操作界面.cd" />
+    <None Include="Class Diagram\图表程序.cd" />
+    <None Include="Class Diagram\图表类.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Z_Test\Test_Excel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <None Include="Resources\菜单栏.PNG" />
+    <None Include="Resources\线条背景.PNG" />
+    <None Include="Resources\AME.PNG" />
+    <None Include="Resources\btn_Roll.PNG" />
+    <None Include="Resources\DatafromExcel.PNG" />
+    <None Include="Resources\DataFromWord.PNG" />
+    <None Include="Resources\SplashScreen.PNG" />
+    <None Include="Resources\IdToShape.PNG" />
+    <None Include="Resources\SplashScreen_DAMIE.png" />
+    <Content Include="Resources\图标.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="$(MSBuildBinPath)/Microsoft.CSharp.targets" />
+</Project>

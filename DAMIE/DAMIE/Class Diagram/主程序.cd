@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AME.APPLICATION_MAINFORM">
+    <Position X="10.5" Y="0.5" Width="2.25" />
+    <NestedTypes>
+      <Delegate Name="AME.APPLICATION_MAINFORM.ShowProgressBar_MarqueeHander" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MainForm_ProjectFile\MainForm_Partial.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="AME.APPLICATION_MAINFORM.HideProgressHander" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MainForm_ProjectFile\MainForm_Partial.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="AME.APPLICATION_MAINFORM.MainUI_ProjectNotOpenedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MainForm_ProjectFile\MainForm_Partial.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Delegate Name="AME.APPLICATION_MAINFORM.MainUI_ProjectOpenedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MainForm_ProjectFile\MainForm_Partial.vb</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>aeUGlchACiIQNABQAwCogACCTFgHEnAgR8wHIxUCwDo=</HashCode>
+      <FileName>MainForm_ProjectFile\MainForm.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AME.GlobalApplication">
+    <Position X="7.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAABoQABGBACAAAABAAAAMBAAAEAAAgAAAQAAgiADAE=</HashCode>
+      <FileName>MainForm_ProjectFile\GlobalApplication.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei" Size="9" />
+</ClassDiagram>
