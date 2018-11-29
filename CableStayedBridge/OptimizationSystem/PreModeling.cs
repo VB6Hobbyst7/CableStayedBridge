@@ -16,7 +16,8 @@ namespace CableStayedBridge
         {
             InitializeComponent();
             //
-            Dock = DockStyle.Fill;     
+            Dock = DockStyle.Fill;
+
         }
         
         private void btn_UserControl_Click(object sender, EventArgs e)
