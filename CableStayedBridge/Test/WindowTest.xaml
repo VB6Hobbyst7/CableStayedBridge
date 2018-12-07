@@ -1,0 +1,13 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CableStayedBridge.Test"
+        xmlns:Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Classic" x:Class="CableStayedBridge.Test.WindowTest"
+        mc:Ignorable="d"
+        Title="WindowTest" Height="577.667" Width="808.167">
+
+    <Grid Background="#FFB6B6B6" Margin="-16,-4,0,-20.4"/>
+</Window>
+

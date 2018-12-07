@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using CableStayedBridge.Test;
 using System.Windows.Controls.Ribbon;
-
 
 namespace CableStayedBridge
 {
@@ -75,7 +75,6 @@ namespace CableStayedBridge
 
             // this.Close();
             //
-
         }
 
         /// <summary>
@@ -100,14 +99,6 @@ namespace CableStayedBridge
 
             }
             Grid_MainWindowContent.Margin = margin;
-        }
-    
-        /// <summary>
-        /// 切换到建模参数输入界面
-        /// </summary>
-        private void SwitchToModeling()
-        {
-
         }
 
         private void ribtn_Modeling_Click(object sender, RoutedEventArgs e)

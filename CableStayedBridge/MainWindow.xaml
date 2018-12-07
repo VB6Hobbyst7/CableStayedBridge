@@ -6,7 +6,14 @@
         xmlns:local="clr-namespace:CableStayedBridge"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions" x:Class="CableStayedBridge.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="548" Width="640.327" MinHeight="600" MinWidth="400" >
+        Title="斜拉索结构调索" Height="548" Width="640.327" MinHeight="400" MinWidth="500" >
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Theme/TabControlStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
 
     <Grid>
 
@@ -52,30 +59,52 @@
                     </RibbonMenuButton>
 
                     <RibbonButton x:Name="ribtn_Modeling" SmallImageSource="Resources\Images\Undo_30px.png" Label="建模" Click="ribtn_Modeling_Click" />
-                    <RibbonButton SmallImageSource="Resources\Images\Redo_30px.png" Label="Format" />
+                    <RibbonButton SmallImageSource="Resources\Images\Redo_30px.png" Label="导入导出" />
                 </RibbonGroup>
 
                 <RibbonGroup Header="优化系统">
-                    <RibbonButton LargeImageSource="Resources\Images\Delete_30px.png" Label="Delete" />
-                    <RibbonButton SmallImageSource="Resources\Images\Save_30px.png" Label="Save" />
+                    <RibbonButton LargeImageSource="Resources\Images\Edit_30px.png" Label="启动计算" />
+                    <RibbonButton SmallImageSource="Resources\Images\Save_30px.png" Label="参数" />
                     <RibbonButton SmallImageSource="Resources\Images\Print_30px.png" Label="Print" />
                 </RibbonGroup>
                 <RibbonGroup Header="图表输出" LargeImageSource="Resources\Images\Delete_30px.png">
-                    <RibbonMenuButton LargeImageSource="Resources\Images\Delete_30px.png" Label="Delete" />
-                    <RibbonMenuButton SmallImageSource="Resources\Images\Save_30px.png" Label="Save" />
-                    <RibbonMenuButton SmallImageSource="Resources\Images\Print_30px.png" Label="Print" />
+                    <RibbonMenuButton LargeImageSource="Resources\Images\Redo_30px.png" Label="输出" />
+                    <RibbonMenuButton SmallImageSource="Resources\Images\Save_30px.png" Label="结果保存" />
+                    <RibbonMenuButton SmallImageSource="Resources\Images\Print_30px.png" Label="生成报告" />
                 </RibbonGroup>
                 <RibbonGroup Header="帮助">
-                    <RibbonMenuButton LargeImageSource="Resources\Images\Delete_30px.png" Label="帮助" />
+                    <RibbonMenuButton LargeImageSource="Resources\Images\Help_30px.png" Label="帮助" />
                     <RibbonMenuButton SmallImageSource="Resources\Images\Save_30px.png" Label="目录" />
                     <RibbonMenuButton SmallImageSource="Resources\Images\Print_30px.png" Label="注册" />
-                    <RibbonMenuButton SmallImageSource="Resources\Images\Print_30px.png" Label="关于" />
+                    <RibbonMenuButton SmallImageSource="Resources\Images\About_30px.png" Label="关于" />
                 </RibbonGroup>
             </RibbonTab>
         </Ribbon>
 
         <Grid x:Name="Grid_MainWindowContent" Margin="1,116.835,1,1" Background="#FF6E6E6E">
-            <TextBlock x:Name="textBlock_Log" Margin="10" TextWrapping="Wrap" Text="TextBlock" Background="#FFD3FFE7"/>
+            <TabControl Style="{StaticResource TabControlWithBottomTabPanel}"  Foreground="Black" Background="Gray" BorderBrush="Transparent" BorderThickness="0" Margin="0" FontSize="14">
+                <TabItem x:Name="tabItem_Log" Style="{StaticResource TabItemExWithUnderLineStyle}" Cursor="Hand" Header="日志" DockPanel.Dock ="Right"  Width="70" Margin="0,5,0,0">
+                    <Grid x:Name="grid_Log" Margin="0,23,0,-1" Background="#FFCF4F4F">
+                        <TextBox x:Name="textBox_Log" Text="结构建模 ——————&#x000A;计算开始&#x000A;时间：20181207 15333&#x000A;..." Margin="1,-2,1,0" Foreground="#FF403F3F" TextDecorations="{x:Null}" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" AcceptsReturn="True" IsReadOnly="True"  />
+                    </Grid>
+                </TabItem>
+                <TabItem x:Name="tabItem_Calculate" Style="{StaticResource TabItemExWithUnderLineStyle}" IsSelected="true" Cursor="Hand" Header="操作" Width="70" Margin="0,5,0,0">
+                    <Grid x:Name="grid_Calculation" Margin="0,23,0,0" Cursor="Arrow">
+                        <Grid.Background>
+                            <ImageBrush ImageSource="Resources/Images/Bgrd_line.png"
+                                        AlignmentX="Left"
+                                        AlignmentY="Top" 
+                                        Viewport="0,0,8,8" 
+                                        ViewportUnits="Absolute" TileMode="Tile"/>
+                        </Grid.Background>                      
+                    </Grid>
+                </TabItem>
+            </TabControl>
+
         </Grid>
+        <!--Grid_MainWindowContent-->
+
+
+
     </Grid>
 </Window>

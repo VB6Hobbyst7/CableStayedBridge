@@ -86,6 +86,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ControlPanel\ApplicationState.cs" />
+    <Compile Include="ControlPanel\LogInfoHandler.cs" />
     <Compile Include="OptimizationSystem\OptimizationSystem.xaml.cs">
       <DependentUpon>OptimizationSystem.xaml</DependentUpon>
     </Compile>
@@ -103,6 +104,9 @@
     </Compile>
     <Compile Include="Test\WindowMultiThread.xaml.cs">
       <DependentUpon>WindowMultiThread.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Test\WindowTest.xaml.cs">
+      <DependentUpon>WindowTest.xaml</DependentUpon>
     </Compile>
     <Compile Include="Test\Window_Ribbon.xaml.cs">
       <DependentUpon>Window_Ribbon.xaml</DependentUpon>
@@ -124,6 +128,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Resources\Theme\TabControlStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Test\RRWParameters.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -133,6 +141,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Test\WindowMultiThread.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Test\WindowTest.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -195,6 +207,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="CableStayedBridge.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\About_30px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Bgrd_line.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
